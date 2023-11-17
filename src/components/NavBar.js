@@ -46,6 +46,8 @@ const NavBar = () => {
             <div className='absolute left-[50%] translate-x-[-50%]'>
                 <Logo />
             </div>
+
+            {/* TODO додати локалізацію EN UA, як варіант https://formatjs.io/ */}
         </header>
     )
 }
