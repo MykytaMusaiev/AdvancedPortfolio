@@ -8,8 +8,9 @@ const Skill = ({ name, x, y }) => {
                      bg-dark text-light py-3 px-6 shadow-dark cursor-pointer absolute"
             whileHover={{ scale: 1.05 }}
             initial={{x:0, y:0}}
-            animate={{x:x, y:y}}
+            whileInView={{x:x, y:y}}
             transition={{ duration: 1.5}}
+            viewport={{once:true}} //for one time animating
         >
             {name}
         </motion.div>
@@ -27,10 +28,11 @@ const Skills = () => {
                 <Skill name="CSS3" x="0vw" y="-12vw"/>
                 <Skill name="Javascript ES9" x="15vw" y="-14vw"/>
 
-                <Skill name="ReactJS" x="-25vw" y="-2vw"/>
+                <Skill name="ReactJS" x="-25vw" y="-5vw"/>
+                <Skill name="Redux" x="-17vw" y="0vw"/>
                 <Skill name="Tailwind CSS" x="23vw" y="1vw"/>
 
-                <Skill name="MaterialUI" x="-11vw" y="7vw"/>
+                <Skill name="MaterialUI" x="-8vw" y="7vw"/>
                 <Skill name="Styled Components" x="10vw" y="11vw"/>
 
                 <Skill name="Github" x="-4vw" y="17vw"/>
