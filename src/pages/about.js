@@ -3,7 +3,9 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-import profilePic from "../../public/images/profile/developer-pic-2.jpg"
+// TODO видалити фото
+// import profilePic from "../../public/images/profile/developer-pic-2.jpg"
+import profilePic from "../../public/images/profile/optimizedProfilePic2.png"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
@@ -36,7 +38,7 @@ const about = () => {
     return (
         <>
             <Head>
-                <title>MykytaM | about Page</title>
+                <title>MykytaM | About Page</title>
                 <meta name="description" concent="any description" />
             </Head>
             <main className='flex w-full flex-col items-center justify-center'>
