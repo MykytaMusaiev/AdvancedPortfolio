@@ -3,9 +3,11 @@ import Layout from '@/components/Layout'
 import Head from 'next/head'
 import Image from 'next/image'
 import React, { useEffect, useRef } from 'react'
-// TODO видалити фото
+// TODO видалити зайві
 // import profilePic from "../../public/images/profile/developer-pic-2.jpg"
-import profilePic from "../../public/images/profile/optimizedProfilePic2.png"
+// import profilePic from "../../public/images/profile/optimizedProfilePic2.png"
+// TODO зняти з фото 3 цятки
+import profilePic from "../../public/images/profile/noBG_optimized_profilePic.png"
 import { useInView, useMotionValue, useSpring } from 'framer-motion'
 import Skills from '@/components/Skills'
 import Experience from '@/components/Experience'
@@ -68,7 +70,10 @@ const about = () => {
                             rounded-[2rem] bg-dark
                             dark:bg-light
                             ' />
-                            <Image src={profilePic} alt="MykytaM" className='w-full h-auto rounded-2xl' />
+                            <Image src={profilePic} alt="Mykyta's photo" className='w-full h-auto rounded-2xl bg-dark dark:bg-light'
+                                priority
+                                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                            />
                         </div>
 
                         <div className='col-span-2 flex flex-col items-end justify-between'>

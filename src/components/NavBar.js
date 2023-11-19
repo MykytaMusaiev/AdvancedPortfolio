@@ -38,30 +38,35 @@ const NavBar = () => {
                 <motion.a href="https://www.linkedin.com/in/mykyta-musaiev/" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-6 mx-3"><LinkedInIcon /></motion.a>
+                    className="w-6 mx-3">
+                    <LinkedInIcon />
+                </motion.a>
                 <motion.a href="https://t.me/herald_of_madness" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-6 ml-3"><TelegramIcon /></motion.a>
+                    className="w-6 ml-3 bg-light rounded-full">
+                    <TelegramIcon />
+                </motion.a>
                 <motion.a href="https://github.com/anotherrandomcoder" target={"_blank"}
                     whileHover={{ y: -2 }}
                     whileTap={{ scale: 0.9 }}
-                    className="w-6 mx-3"><GithubIcon />
-                    </motion.a>
+                    className="w-6 mx-3">
+                    <GithubIcon />
+                </motion.a>
 
-                    <button
+                <button
                     onClick={() => setMode(mode === "light" ? "dark" : "light")}
                     className={`ml-3 flex items-center justify-center rounded-full p-1
                     ${mode === "light" ? "bg-dark text-light" : "bg-light text-dark"}
                     `}
-                    >
-                        {
-                            mode === "dark" ?
-                            <SunIcon className={"fill-dark"}/> :
+                >
+                    {
+                        mode === "dark" ?
+                            <SunIcon className={"fill-dark"} /> :
                             <MoonIcon className={"fill-dark"} />
 
-                        }
-                    </button>
+                    }
+                </button>
             </nav>
             <div className='absolute left-[50%] translate-x-[-50%]'>
                 <Logo />

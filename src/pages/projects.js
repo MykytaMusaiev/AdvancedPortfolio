@@ -6,6 +6,9 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
 import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+import { motion } from "framer-motion"
+
+const FramerImage = motion(Image);
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
     return (
@@ -18,7 +21,12 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
              dark:bg-light
             ' />
             <Link href={link} target="_blank" className='w-1/2 cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto' />
+                <FramerImage src={img} alt={title} className='w-full h-auto'
+                whileHover={{scale:1.05}}
+                transition={{duration:0.2}}
+                    priority
+                    sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 50vw"
+                />
             </Link>
             <div className='w-1/2 flex flex-col items-start justify-between pl-6'>
                 <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
@@ -48,7 +56,11 @@ const Project = ({ title, type, img, link, github }) => {
          '>
             <div className='absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light' />
             <Link href={link} target="_blank" className='w-full cursor-pointer overflow-hidden rounded-lg'>
-                <Image src={img} alt={title} className='w-full h-auto' />
+                
+                <FramerImage src={img} alt={title} className='w-full h-auto'
+                whileHover={{scale:1.05}}
+                transition={{duration:0.2}}
+                />
             </Link>
             <div className='w-full flex flex-col items-start justify-between mt-4'>
                 <span className='text-primary font-medium text-xl dark:text-primaryDark'>{type}</span>
@@ -83,8 +95,8 @@ const projects = () => {
                             <FeaturedProject
                                 title="Crypto Screener Application"
                                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency"
+                                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                                        local currency"
                                 link="/"
                                 github="/"
                                 type="Featured Project"
@@ -95,8 +107,8 @@ local currency"
                             <Project
                                 title="Crypto Screener Application"
                                 summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency"
+                                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
+                                        local currency"
                                 link="/"
                                 github="/"
                                 type="Featured Project"
