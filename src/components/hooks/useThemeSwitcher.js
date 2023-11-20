@@ -12,18 +12,14 @@ const useThemeSwitcher = () => {
             if (userPref) {
                 let check = userPref === "dark" ? "dark" : "light";
 
-                console.log(`check1: ${check}`);
                 setMode(check);
                 if (check === "dark") {
                     document.documentElement.classList.add("dark");
-                    console.log(`added dark`);
                 } else {
                     document.documentElement.classList.remove("dark");
-                    console.log(`removed dark`);
                 }
             } else {
                 let check = mediaQuery.matches ? "dark" : "light";
-                console.log(`check2: ${check}`);
                 setMode(check);
                 window.localStorage.setItem(
                     "theme",
@@ -46,7 +42,6 @@ const useThemeSwitcher = () => {
     }, [])
 
     useEffect(() => {
-        console.log(`mode: ${mode}`)
         if (mode === "dark") {
             window.localStorage.setItem("theme", "dark");
             document.documentElement.classList.add("dark")
