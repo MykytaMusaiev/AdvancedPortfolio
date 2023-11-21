@@ -43,7 +43,7 @@ const Skills = () => {
                 </motion.div>
                 {/* <Skill name="Web" x="0vw" y="0vw"/>   */}
 
-                <Skill name="Web Design" x="0vw" y="-30vw"/>      
+                <Skill name="Web Design" x="0vw" y="-24vw"/>      
                 <Skill name="HTML5" x="-20vw" y="-20vw"/>
                 <Skill name="CSS3" x="-1vw" y="-12vw"/>
                 <Skill name="Javascript ES9" x="22vw" y="-19vw"/>
@@ -53,9 +53,9 @@ const Skills = () => {
                 <Skill name="Tailwind CSS" x="23vw" y="-3vw"/>
 
                 <Skill name="MaterialUI" x="-8vw" y="10vw"/>
-                <Skill name="Styled Components" x="15vw" y="18vw"/>
+                <Skill name="Styled Components" x="15vw" y="15vw"/>
 
-                <Skill name="Github" x="-10vw" y="27vw"/>
+                <Skill name="Github" x="-10vw" y="20vw"/>
             </div>
         </>
     )
