@@ -53,13 +53,13 @@ const about = () => {
                         <div className="col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8">
                             <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
                             <p className="font-medium">
-                                Hi, I'm Mykyta, a web developer and UI/UX designer, and my passion is creating beautiful, functional,
+                                Hi, I&apos;m Mykyta, a web developer and UI/UX designer, and my passion is creating beautiful, functional,
                                 user-centered, and wonderful digital experiences. With 2 years of experience in the field. I am always looking for
-                                new and innovative ways to bring my client's visions to life.
+                                new and innovative ways to bring my client&apos;s visions to life.
                             </p>
                             <p className="font-medium mt-4">
                                 I wholeheartedly believe that design extends beyond crafting visually appealing aesthetics. 
-                                It's about comprehending user needs, addressing their challenges, and devising solutions that are both intuitive and enjoyable to use.
+                                It&apos;s about comprehending user needs, addressing their challenges, and devising solutions that are both intuitive and enjoyable to use.
                                 Design should transform complex problems into seamless experiences that empower users to effortlessly achieve their goals.
                             </p>
                         </div>
@@ -70,7 +70,7 @@ const about = () => {
                             rounded-[2rem] bg-dark
                             dark:bg-light
                             " />
-                            <Image src={profilePic} alt="Mykyta's photo" className="w-full h-auto rounded-2xl bg-dark dark:bg-light"
+                            <Image src={profilePic} alt="Mykyta&apos;s photo" className="w-full h-auto rounded-2xl bg-dark dark:bg-light"
                                 priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
