@@ -5,7 +5,12 @@ import AnimatedText from '@/components/AnimatedText'
 import Link from 'next/link'
 import Image from 'next/image'
 import { GithubIcon } from '@/components/Icons'
-import project1 from "../../public/images/projects/crypto-screener-cover-image.jpg"
+
+import store from "../../public/images/projects/store.jpg"
+import cms from "../../public/images/projects/cms.jpg"
+import chat from "../../public/images/projects/chat.jpg"
+import movie from "../../public/images/projects/movie.jpg"
+
 import { motion } from "framer-motion"
 import TransitionEffect from '@/components/TransitionEffect'
 
@@ -117,7 +122,7 @@ const projects = () => {
                                 link="https://e-commerce-store-anotherrandomcoder.vercel.app/"
                                 github="https://github.com/anotherrandomcoder/e-commerce_store"
                                 type="Featured Project"
-                                img={project1}
+                                img={store}
                                 live={true}
                             />
                         </div>
@@ -132,7 +137,7 @@ const projects = () => {
                                 link="https://e-commerce-admin-anotherrandomcoder.vercel.app/"
                                 github="https://github.com/anotherrandomcoder/e-commerce_admin"
                                 type="Featured Project"
-                                img={project1}
+                                img={cms}
                                 live={true}
                             />
                         </div>
@@ -147,7 +152,7 @@ const projects = () => {
                                 link="https://messenger-anotherrandomcoder.vercel.app/"
                                 github="https://github.com/anotherrandomcoder/e-commerce_admin"
                                 type="Featured Project"
-                                img={project1}
+                                img={chat}
                                 live={true}
                             />
                         </div>
@@ -157,12 +162,12 @@ const projects = () => {
                                 title="Movies recommendation app"
                                 summary={[
                                     "It allow to make your own lists of favorite movies from themoviedb.org and share them in social media or by direct links. A lot of filtering parameters.",
-                                    "Used technologies: ", "ReactJS, React Router v6, Material UI, GraphQL + Apollo, Storybook, react-intl;"
+                                    "Used technologies: ", "ReactJS, React Router v6, Material UI, GraphQL + Apollo, Storybook, react-intl"
                                 ]}
                                 link="https://github.com/anotherrandomcoder/movies_recommendation"
                                 github="https://github.com/anotherrandomcoder/movies_recommendation"
                                 type="Favorite movie's app"
-                                img={project1}
+                                img={movie}
                                 live={false}
                             />
                         </div>
