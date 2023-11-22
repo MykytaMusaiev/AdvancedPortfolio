@@ -48,7 +48,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github, live = false
                 </p>
                 <div className='mt-2 flex items-center m-auto lg:justify-between'>
                     <Link href={github} target="_blank" className='w-10'><GithubIcon /></Link>
-                    <Link href={github} target="_blank"
+                    <Link href={link} target="_blank"
                         className='ml-4 rounded-lg bg-dark text-light p-2 px-6 text-lg font-semibold
                         dark:bg-light dark:text-dark
                         sm:px-4 sm:text-base
@@ -87,7 +87,7 @@ const Project = ({ title, type, img, link, github }) => {
                 <div className='mt-2 w-full flex items-center justify-between'>
                     {/* TODO погратись з маржіном кнопок, доки не стане ок очам */}
                     <Link href={github} target="_blank" className='mr-4 w-8 md:w-6'><GithubIcon /></Link>
-                    <Link href={github} target="_blank" className='ml-4 rounded-lg text-lg font-semibold underline md:text-base'>Visit</Link>
+                    <Link href={link} target="_blank" className='ml-4 rounded-lg text-lg font-semibold underline md:text-base'>Visit</Link>
                 </div>
             </div>
 
