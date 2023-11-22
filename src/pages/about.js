@@ -1,17 +1,17 @@
-import AnimatedText from '@/components/AnimatedText'
-import Layout from '@/components/Layout'
-import Head from 'next/head'
-import Image from 'next/image'
-import React, { useEffect, useRef } from 'react'
+import AnimatedText from "@/components/AnimatedText"
+import Layout from "@/components/Layout"
+import Head from "next/head"
+import Image from "next/image"
+import React, { useEffect, useRef } from "react"
 // TODO видалити зайві
 // import profilePic from "../../public/images/profile/developer-pic-2.jpg"
 // import profilePic from "../../public/images/profile/optimizedProfilePic2.png"
 // TODO зняти з фото 3 цятки
 import profilePic from "../../public/images/profile/noBG_optimized_profilePic.png"
-import { useInView, useMotionValue, useSpring } from 'framer-motion'
-import Skills from '@/components/Skills'
-import Experience from '@/components/Experience'
-import TransitionEffect from '@/components/TransitionEffect'
+import { useInView, useMotionValue, useSpring } from "framer-motion"
+import Skills from "@/components/Skills"
+import Experience from "@/components/Experience"
+import TransitionEffect from "@/components/TransitionEffect"
 
 const AnimatedNumbers = ({ value }) => {
     const ref = useRef(null)
@@ -45,64 +45,62 @@ const about = () => {
                 <meta name="Biography page" concent="Page with my work experience and professional targets " />
             </Head>
             <TransitionEffect />
-            <main className='flex w-full flex-col items-center justify-center dark:text-light'>
-                <Layout className='pt-16'>
-                    <AnimatedText text="Passion Fuels Purpose! " className='mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8' />
+            <main className="flex w-full flex-col items-center justify-center dark:text-light">
+                <Layout className="pt-16">
+                    <AnimatedText text="Passion Fuels Purpose! " className="mb-16 lg:!text-7xl sm:!text-6xl xs:!text-4xl sm:mb-8" />
 
                     <div className="grid w-full grid-cols-8 gap-16 sm:gap-8">
-                        <div className='col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8'>
-                            <h2 className='mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75'>Biography</h2>
-                            <p className='font-medium'>
+                        <div className="col-span-3 flex flex-col items-start justify-center xl:col-span-4 md:order-2 md:col-span-8">
+                            <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">Biography</h2>
+                            <p className="font-medium">
                                 Hi, I'm Mykyta, a web developer and UI/UX designer, and my passion is creating beautiful, functional,
                                 user-centered, and wonderful digital experiences. With 2 years of experience in the field. I am always looking for
-                                new and innovative ways to bring my clients' visions to life.
+                                new and innovative ways to bring my client's visions to life.
                             </p>
-                            <p className='font-medium mt-4'>
-                                {/* I believe that design is about more than just making things look pretty – it's about solving problems and
-                                creating intuitive, enjoyable experiences for users. */}
+                            <p className="font-medium mt-4">
                                 I wholeheartedly believe that design extends beyond crafting visually appealing aesthetics. 
                                 It's about comprehending user needs, addressing their challenges, and devising solutions that are both intuitive and enjoyable to use.
                                 Design should transform complex problems into seamless experiences that empower users to effortlessly achieve their goals.
                             </p>
                         </div>
 
-                        <div className='col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
-                        bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8'>
-                            <div className='absolute top-0 -right-3 -z-10 w-[102%] h-[103%]
+                        <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark
+                        bg-light p-8 dark:bg-dark dark:border-light xl:col-span-4 md:order-1 md:col-span-8">
+                            <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%]
                             rounded-[2rem] bg-dark
                             dark:bg-light
-                            ' />
-                            <Image src={profilePic} alt="Mykyta's photo" className='w-full h-auto rounded-2xl bg-dark dark:bg-light'
+                            " />
+                            <Image src={profilePic} alt="Mykyta's photo" className="w-full h-auto rounded-2xl bg-dark dark:bg-light"
                                 priority
                                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                             />
                         </div>
 
-                        <div className='col-span-2 flex flex-col items-end justify-between
-                                        xl:col-span-8 xl:flex-row xl:items-center md:order-3'>
+                        <div className="col-span-2 flex flex-col items-end justify-between
+                                        xl:col-span-8 xl:flex-row xl:items-center md:order-3">
 
-                            <div className='flex flex-col items-end justify-center xl:items-center'>
-                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
+                            <div className="flex flex-col items-end justify-center xl:items-center">
+                                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                                     <AnimatedNumbers value={10} />+
                                 </span>
-                                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                                                xl:text-center md:text-lg sm:text-base xs:test-sm'>satisfied clients</h2>
+                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
+                                                xl:text-center md:text-lg sm:text-base xs:test-sm">satisfied clients</h2>
                             </div>
 
-                            <div className='flex flex-col items-end justify-center xl:items-center'>
-                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
+                            <div className="flex flex-col items-end justify-center xl:items-center">
+                                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                                     <AnimatedNumbers value={10} />+
                                 </span>
-                                <h2 className='text-xl font-medium capitalize text-dark/75  dark:text-light/75
-                                xl:text-center md:text-lg sm:text-base xs:test-sm'>projects completed</h2>
+                                <h2 className="text-xl font-medium capitalize text-dark/75  dark:text-light/75
+                                xl:text-center md:text-lg sm:text-base xs:test-sm">projects completed</h2>
                             </div>
 
-                            <div className='flex flex-col items-end justify-center xl:items-center'>
-                                <span className='inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl'>
+                            <div className="flex flex-col items-end justify-center xl:items-center">
+                                <span className="inline-block text-7xl font-bold md:text-6xl sm:text-5xl xs:text-4xl">
                                     <AnimatedNumbers value={2} />+
                                 </span>
-                                <h2 className='text-xl font-medium capitalize text-dark/75 dark:text-light/75
-                                xl:text-center md:text-lg sm:text-base xs:test-sm'>years of experience</h2>
+                                <h2 className="text-xl font-medium capitalize text-dark/75 dark:text-light/75
+                                xl:text-center md:text-lg sm:text-base xs:test-sm">years of experience</h2>
                             </div>
 
                         </div>
