@@ -11,7 +11,7 @@ import TransitionEffect from '@/components/TransitionEffect'
 
 const FramerImage = motion(Image);
 
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+const FeaturedProject = ({ type, title, summary, img, link, github, live = false }) => {
     return (
         <article className='w-full flex items-center justify-between rounded-3xl
         border border-solid border-dark bg-light shadow-2xl p-12 relative rounded-br-2xl
@@ -36,7 +36,11 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                 <Link href={link} target="_blank" className="hover:underline underline-offset-2">
                     <h2 className='my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-sm'>{title}</h2>
                 </Link>
-                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>{summary}</p>
+                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>
+                    {summary[0]}</p>
+                <p className='my-2 font-medium text-dark dark:text-light sm:text-sm'>
+                    {summary[1]}<br /><span className='font-bold'>{summary[2]}</span>
+                </p>
                 <div className='mt-2 flex items-center m-auto lg:justify-between'>
                     <Link href={github} target="_blank" className='w-10'><GithubIcon /></Link>
                     <Link href={github} target="_blank"
@@ -44,7 +48,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
                         dark:bg-light dark:text-dark
                         sm:px-4 sm:text-base
                         '>
-                        Visit Project
+                        {live ? "Live Demo" : "More Details"
+
+                        }
                     </Link>
                 </div>
             </div>
@@ -101,78 +107,77 @@ const projects = () => {
                     />
 
                     <div className='grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0'>
+
                         <div className='col-span-12'>
                             <FeaturedProject
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                        local currency"
-                                link="/"
-                                github="/"
+                                title="E-commerce Store"
+                                summary={["It allow you to order any goods, depend on the store and content type, you are added in Dashboard & CMS",
+                                    "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, Clerk, Shadcn/UI"
+                                ]}
+                                link="https://e-commerce-store-anotherrandomcoder.vercel.app/"
+                                github="https://github.com/anotherrandomcoder/e-commerce_store"
                                 type="Featured Project"
                                 img={project1}
+                                live={true}
                             />
                         </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-                                        It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-                                        local currency"
-                                link="/"
-                                github="/"
-                                type="Featured Project"
-                                img={project1}
-                            />
-                        </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency"
-                                link="/"
-                                github="/"
-                                type="Featured Project"
-                                img={project1}
-                            />
-                        </div>
+
                         <div className='col-span-12'>
                             <FeaturedProject
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency"
-                                link="/"
-                                github="/"
+                                title="E-commerce Dashboard & CMS"
+                                summary={[
+                                    "CMS with own API, for creating and managing new or existing stores, with different categories, billboards, good's properties and order statistics",
+                                    "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, Clerk, Shadcn/UI"
+                                ]}
+                                link="https://e-commerce-admin-anotherrandomcoder.vercel.app/"
+                                github="https://github.com/anotherrandomcoder/e-commerce_admin"
                                 type="Featured Project"
                                 img={project1}
+                                live={true}
                             />
                         </div>
-                        <div className='col-span-6 sm:col-span-12'>
+
+                        <div className='col-span-12'>
+                            <FeaturedProject
+                                title="Real-Time Messenger"
+                                summary={[
+                                    "It allow you to make social messaging in a real time between two or more users in private or group chat",
+                                    "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, NextAuth, Pusher"
+                                ]}
+                                link="https://messenger-anotherrandomcoder.vercel.app/"
+                                github="https://github.com/anotherrandomcoder/e-commerce_admin"
+                                type="Featured Project"
+                                img={project1}
+                                live={true}
+                            />
+                        </div>
+
+                        <div className='col-span-12'>
+                            <FeaturedProject
+                                title="Movies recommendation app"
+                                summary={[
+                                    "It allow to make your own lists of favorite movies from themoviedb.org and share them in social media or by direct links. A lot of filtering parameters.",
+                                    "Used technologies: ", "ReactJS, React Router v6, Material UI, GraphQL + Apollo, Storybook, react-intl;"
+                                ]}
+                                link="https://github.com/anotherrandomcoder/movies_recommendation"
+                                github="https://github.com/anotherrandomcoder/movies_recommendation"
+                                type="Favorite movie's app"
+                                img={project1}
+                                live={false}
+                            />
+                        </div>
+
+
+                        {/* <div className='col-span-6 sm:col-span-12'>
                             <Project
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency"
+                                title="Photographer's portfolio website"
+                                summary=""
                                 link="/"
                                 github="/"
-                                type="Featured Project"
+                                type="Landing Page"
                                 img={project1}
                             />
-                        </div>
-                        <div className='col-span-6 sm:col-span-12'>
-                            <Project
-                                title="Crypto Screener Application"
-                                summary="A feature-rich Crypto Screener App using React, Tailwind CSS, Context API, React Router and Recharts. 
-It shows detail regarding almost all the cryptocurrency. You can easily convert the price in your 
-local currency"
-                                link="/"
-                                github="/"
-                                type="Featured Project"
-                                img={project1}
-                            />
-                        </div>
+                        </div> */}
 
                     </div>
                 </Layout>
