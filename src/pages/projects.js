@@ -119,8 +119,8 @@ const projects = () => {
                                 summary={["It allow you to order any goods, depend on the store and content type, you are added in Dashboard & CMS",
                                     "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, Clerk, Shadcn/UI"
                                 ]}
-                                link="https://e-commerce-store-anotherrandomcoder.vercel.app/"
-                                github="https://github.com/anotherrandomcoder/e-commerce_store"
+                                link="https://e-commerce-store-neon.vercel.app/"
+                                github="https://github.com/MykytaMusaiev/e-commerce_store"
                                 type="Featured Project"
                                 img={store}
                                 live={true}
@@ -134,8 +134,8 @@ const projects = () => {
                                     "CMS with own API, for creating and managing new or existing stores, with different categories, billboards, good's properties and order statistics",
                                     "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, Clerk, Shadcn/UI"
                                 ]}
-                                link="https://e-commerce-admin-anotherrandomcoder.vercel.app/"
-                                github="https://github.com/anotherrandomcoder/e-commerce_admin"
+                                link="https://e-commerce-admin-one-rho.vercel.app/"
+                                github="https://github.com/MykytaMusaiev/e-commerce_admin"
                                 type="Featured Project"
                                 img={cms}
                                 live={true}
@@ -149,8 +149,8 @@ const projects = () => {
                                     "It allow you to make social messaging in a real time between two or more users in private or group chat",
                                     "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, NextAuth, Pusher"
                                 ]}
-                                link="https://messenger-anotherrandomcoder.vercel.app/"
-                                github="https://github.com/anotherrandomcoder/e-commerce_admin"
+                                link="https://messenger-jade.vercel.app//"
+                                github="https://github.com/MykytaMusaiev/e-commerce_admin"
                                 type="Featured Project"
                                 img={chat}
                                 live={true}
@@ -164,8 +164,8 @@ const projects = () => {
                                     "It allow to make your own lists of favorite movies from themoviedb.org and share them in social media or by direct links. A lot of filtering parameters.",
                                     "Used technologies: ", "ReactJS, React Router v6, Material UI, GraphQL + Apollo, Storybook, react-intl"
                                 ]}
-                                link="https://github.com/anotherrandomcoder/movies_recommendation"
-                                github="https://github.com/anotherrandomcoder/movies_recommendation"
+                                link="https://github.com/MykytaMusaiev/movies_recommendation"
+                                github="https://github.com/MykytaMusaiev/movies_recommendation"
                                 type="Favorite movie's app"
                                 img={movie}
                                 live={false}

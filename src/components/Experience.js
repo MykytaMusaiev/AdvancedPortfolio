@@ -56,7 +56,7 @@ const Experience = () => {
                     <Details
                         position="Javascript developer"
                         company="LLC WAA"
-                        time="04.2022 - 07.2023"
+                        time="04.2022 - 09.2023"
                         companyLink=""
                         address="Kyiv"
                         work={[
