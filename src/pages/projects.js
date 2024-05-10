@@ -119,7 +119,7 @@ const projects = () => {
                                 summary={["It allow you to order any goods, depend on the store and content type, you are added in Dashboard & CMS",
                                     "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, Clerk, Shadcn/UI"
                                 ]}
-                                link="https://e-commerce-store-neon.vercel.app/"
+                                link="https://e-commerce-promo-store.vercel.app/"
                                 github="https://github.com/MykytaMusaiev/e-commerce_store"
                                 type="Featured Project"
                                 img={store}
@@ -134,7 +134,7 @@ const projects = () => {
                                     "CMS with own API, for creating and managing new or existing stores, with different categories, billboards, good's properties and order statistics",
                                     "Used technologies: ", "ReactJS, NextJS, TailwindCSS, Prisma, Clerk, Shadcn/UI"
                                 ]}
-                                link="https://e-commerce-admin-one-rho.vercel.app/"
+                                link="https://e-commerce-promo-admin.vercel.app/"
                                 github="https://github.com/MykytaMusaiev/e-commerce_admin"
                                 type="Featured Project"
                                 img={cms}
