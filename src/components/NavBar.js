@@ -75,13 +75,13 @@ const NavBar = () => {
                         className="w-6 mx-3">
                         <LinkedInIcon />
                     </motion.a>
-                    <motion.a href="https://t.me/herald_of_madness" target={"_blank"}
+                    <motion.a href="https://t.me/Extravertic_Hermit" target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3 bg-light rounded-full">
                         <TelegramIcon />
                     </motion.a>
-                    <motion.a href="https://github.com/anotherrandomcoder" target={"_blank"}
+                    <motion.a href="https://github.com/MykytaMusaiev" target={"_blank"}
                         whileHover={{ y: -2 }}
                         whileTap={{ scale: 0.9 }}
                         className="w-6 mx-3">
