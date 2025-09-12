@@ -17,7 +17,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>Create Next App</title>
+        <title>MykytaM`s Portfolio</title>
         <meta name="MykytaM`s Portfolio" content="Another step in long and productive road." />
       </Head>
       <TransitionEffect />
