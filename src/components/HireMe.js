@@ -11,7 +11,7 @@ const HireMe = () => {
             <div className='w-48 h-auto flex items-center justify-center relative md:w-24'>
                 <CircularText className={"fill-dark animate-spin-slow direction-reverse dark:fill-light"} />
                 {/* TODO видалив з елемента нижче клас top-1/2 перевірити якщо буде неправильно розміщуватись вертикально */}
-                <Link href="mailto:n.musaiev@gmail.com"
+                <Link href="mailto:m.musaiev.dev@gmail.com"
                     className='flex items-center justify-center 
                     absolute left-1/2 -translate-x-1/2
                     bg-dark text-light shadow-md border border-solid border-dark w-20 h-20 rounded-full

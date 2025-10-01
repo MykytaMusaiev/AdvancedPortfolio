@@ -36,10 +36,10 @@ export default function Home() {
                 className='!text-6xl !text-left xl:!text-5xl lg:!text-center lg:!text-6xl md:!text-5xl sm:!text-3xl' />
               <p className='mt-4 mb-2 text-base font-medium md:text-small sm:text-sm'>
                 Frontend developer in JavaScript, React, and Redux with a strong focus on creating engaging and user-friendly graphical user interfaces.</p>
-              <p className='mb-4 mb-2 lg:my-2 text-base font-medium md:text-small sm:text-sm'>Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
+              <p className=' mb-2 lg:my-2 text-base font-medium md:text-small sm:text-sm'>Explore my latest projects and articles, showcasing my expertise in React.js and web development.</p>
 
               <div className='flex items-center self-start mt-2 lg:self-center'>
-                <Link href="/MusaievMykytaCV.pdf" target={'_blank'}
+                <Link href="/Mykyta_Musaiev_Frontend_Developer.pdf" target={'_blank'}
                   className='flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold
                 hover:bg-light hover:text-dark border-2 border-solid border-transparent hover:border-dark
                 dark:bg-light dark:text-dark hover:dark:text-light hover:dark:bg-dark hover:dark:border-light
@@ -48,7 +48,7 @@ export default function Home() {
                 >Resume<LinkArrow className={"w-6 ml-1"} />
                 </Link>
                 {/* TODO замінити на форму контакту сформовану в модалці з тейлвіндом і бібліотекою стану відправки. бібліотека для зв'язку EmailJS; Для тосту React Hot Toast */}
-                <Link href="mailto:n.musaiev@gmail.com" target={'_blank'}
+                <Link href="mailto:m.musaiev.dev@gmail.com" target={'_blank'}
                   className='ml-4 text-lg font-medium capitalize text-dark underline dark:text-light
                   md:text-base'
                 >Contact</Link>

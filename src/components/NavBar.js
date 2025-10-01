@@ -2,7 +2,7 @@ import Link from 'next/link'
 import React, { useState } from 'react'
 import Logo from './Logo'
 import { useRouter } from 'next/router'
-import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TelegramIcon, TwitterIcon } from './Icons'
+import { GithubIcon, LinkedInIcon, MoonIcon, SunIcon, TelegramIcon } from './Icons'
 import { motion } from 'framer-motion'
 import useThemeSwitcher from './hooks/useThemeSwitcher'
 
