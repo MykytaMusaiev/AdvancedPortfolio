@@ -197,7 +197,7 @@ const projects = () => {
                                 summary={[
                                     "A dynamic e-commerce storefront designed for ordering goods, with content driven and fully managed by a custom administrative CMS (see Dashboard project).",
                                     "Features a secure, full-stack connection to its own backend, utilizing Prisma for robust data persistence and Clerk for user authentication.",
-                                    "Used technologies: ReactJS, NextJS, TailwindCSS, Prisma, Clerk, Shadcn/UI",
+                                    "Used technologies: ReactJS, NextJS, TailwindCSS, Stripe, Shadcn/UI",
                                 ]}
                                 link="https://e-commerce-promo-store.vercel.app/"
                                 github="https://github.com/MykytaMusaiev/e-commerce_store"
