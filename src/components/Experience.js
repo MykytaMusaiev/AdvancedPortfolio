@@ -77,7 +77,7 @@ const Experience = () => {
                     <Details
                         position="Frontend Developer"
                         company="LLC WAA"
-                        time="04.2022 - 09.2023"
+                        time="09.2024 - 02.2025"
                         companyLink=""
                         address="Kyiv"
                         work={[
@@ -90,7 +90,7 @@ const Experience = () => {
                     <Details
                         position="Frontend Developer"
                         company="Elit-taxi"
-                        time="02.2021 – 03.2022"
+                        time="06.2023 – 07.2024"
                         companyLink=""
                         address="Kyiv"
                         work={[
